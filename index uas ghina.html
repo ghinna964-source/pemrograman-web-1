@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Ghina Khairunnisa</title>
+  <link rel="stylesheet" href="uas ghina2.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Website Profil</h1>
+  <p class="subtitle">Ghina Khairunnisa Salsabila</p>
+
+  <div class="menu">
+    <button class="btn profile" onclick="showDialog('profile')">Profile</button>
+    <button class="btn foto" onclick="showDialog('foto')">Foto</button>
+    <button class="btn video" onclick="showDialog('video')">Video</button>
+    <button class="btn audio" onclick="showDialog('audio')">Audio</button>
+    <button class="btn karya" onclick="showDialog('karya')">Karya</button>
+  </div>
+</div>
+
+<!-- PROFILE -->
+<div id="profileDialog" class="dialog">
+  <div class="dialog-content gradient-profile">
+    <span class="close" onclick="closeDialog('profile')">&times;</span>
+    <h2>Profil</h2>
+    <ul>
+      <li><b>Nama:</b> Ghina Khairunnisa Salsabila</li>
+      <li><b>NIM:</b> 251011700680</li>
+      <li><b>Kelas:</b> 01SIFP011</li>
+      <li><b>Jurusan:</b> Sistem Informasi</li>
+      <li><b>Universitas:</b> Universitas Pamulang</li>
+    </ul>
+  </div>
+</div>
+
+<!-- FOTO -->
+<div id="fotoDialog" class="dialog">
+  <div class="dialog-content gradient-foto">
+    <span class="close" onclick="closeDialog('foto')">&times;</span>
+    <h2>Foto</h2>
+    <img src="gambar.jpeg" class="media">
+  </div>
+</div>
+
+<!-- VIDEO -->
+<div id="videoDialog" class="dialog">
+  <div class="dialog-content gradient-video">
+    <span class="close" onclick="closeDialog('video')">&times;</span>
+    <h2>Video</h2>
+    <video controls class="media">
+      <source src="wowwwww.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<!-- AUDIO -->
+<div id="audioDialog" class="dialog">
+  <div class="dialog-content gradient-audio">
+    <span class="close" onclick="closeDialog('audio')">&times;</span>
+    <h2>Audio</h2>
+    <audio controls>
+      <source src="akua nak sehat.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+</div>
+
+<!-- KARYA -->
+<div id="karyaDialog" class="dialog">
+  <div class="dialog-content gradient-karya">
+    <span class="close" onclick="closeDialog('karya')">&times;</span>
+    <h2>Karya</h2>
+    <ul>
+      <li>Website Profil Mahasiswa</li>
+      <li>Website Portfolio</li>
+      <li>Project UAS Web</li>
+    </ul>
+  </div>
+</div>
+
+<script src="uas ghina.js"></script>
+</body>
+</html>

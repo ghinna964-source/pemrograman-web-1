@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #c0c7e6, #764ba2);
+  font-size: 22px;
+}
+
+/* CONTAINER UTAMA */
+.container {
+  text-align: center;
+  padding: 130px 30px;
+  color: white;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* JUDUL */
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  font-size: 28px;
+  margin-top: -6px;
+  opacity: 0.9;
+}
+
+/* MENU */
+.menu {
+  margin-top: 70px;
+}
+
+/* TOMBOL */
+.btn {
+  padding: 24px 44px;
+  margin: 16px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.btn:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+
+/* WARNA TOMBOL */
+.profile { background: #ff6f91; }
+.foto { background: #ff9671; }
+.video { background: #ffc75f; color: #333; }
+.audio { background: #4dd599; }
+.karya { background: #845ec2; }
+
+/* DIALOG OVERLAY */
+.dialog {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 9;
+}
+
+/* ISI DIALOG */
+.dialog-content {
+  width: 680px;
+  margin: 6% auto;
+  padding: 45px;
+  border-radius: 28px;
+  color: white;
+  animation: popup 0.4s ease;
+  position: relative;
+}
+
+/* JUDUL DI DIALOG */
+.dialog-content h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+/* TEKS DI DIALOG */
+.dialog-content p {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+/* TOMBOL CLOSE */
+.close {
+  position: absolute;
+  right: 26px;
+  top: 18px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+/* MEDIA */
+.media {
+  width: 100%;
+  border-radius: 18px;
+  margin-top: 24px;
+}
+
+/* GRADIENT TIAP DIALOG */
+.gradient-profile {
+  background: linear-gradient(135deg, #ff6f91, #ff9671);
+}
+.gradient-foto {
+  background: linear-gradient(135deg, #ff9671, #ffc75f);
+}
+
+.gradient-video {
+  background: linear-gradient(135deg, #ffc75f, #f9f871);
+  color: #333;
+}
+
+.gradient-audio {
+  background: linear-gradient(135deg, #4dd599, #00c9a7);
+}
+
+.gradient-karya {
+  background: linear-gradient(135deg, #845ec2, #d65db1);
+}
+
+/* ANIMASI */
+@keyframes popup {
+  from {
+    transform: scale(0.75);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
