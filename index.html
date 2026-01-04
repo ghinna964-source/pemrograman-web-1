@@ -20,7 +20,7 @@
     <button class="btn audio" onclick="showDialog('audio')">Audio</button>
     <button class="btn karya" onclick="showDialog('karya')">Karya</button>
     <button class="btn dokumen" onclick="showDialog('dokumen')">Dokumen</button>
-    <button class="btn profile" onclick="showDialog('maps')">Maps</button>
+    <button class="btn maps" onclick="showDialog('maps')">Maps</button>
   </div>
 </div>
 
@@ -107,16 +107,20 @@
 </div>
 
   <!-- MAPS -->
-<div class="dialog-content gradient-maps">
-  <span class="close" onclick="closeDialog('maps')">&times;</span>
-  <h2>Lokasi Kampus</h2>
-
-  <div class="maps-container">
-    <iframe 
-      src="https://www.google.com/maps?q=Universitas+Pamulang&output=embed">
-    </iframe>
+<div id="mapsDialog" class="dialog">
+  <div class="dialog-content gradient-maps">
+    <span class="close" onclick="closeDialog('maps')">&times;</span>
+    <h2>Lokasi Kampus</h2>
+    <div class="maps-container">
+      <iframe
+        src="https://www.google.com/maps?q=Universitas+Pamulang&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
   </div>
 </div>
+
 
 <script src="uas ghina.js"></script>
 </body>
