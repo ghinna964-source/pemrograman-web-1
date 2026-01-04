@@ -111,6 +111,22 @@ h1 {
   margin-top: 24px;
 }
 
+/* LIST DOKUMEN */
+.dokumen-link {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background: white;
+  color: #333;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.dokumen-link:hover {
+  background: #f1f1f1;
+}
+
 /* GRADIENT TIAP DIALOG */
 .gradient-profile {
   background: linear-gradient(135deg, #ff6f91, #ff9671);
@@ -130,6 +146,11 @@ h1 {
 
 .gradient-karya {
   background: linear-gradient(135deg, #845ec2, #d65db1);
+}
+
+.gradient-dokumen {
+  background: linear-gradient(135deg, #355c7d, #6c5b7b);
+  text-align: center;
 }
 
 /* ANIMASI */
